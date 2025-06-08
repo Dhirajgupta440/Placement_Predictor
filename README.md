@@ -1,6 +1,6 @@
-# 🎓Placement Predictor
+# 🎓 Placement Predictor
 
-This project predicts whether a student will be placed or not based on academic performance( CGPA) and other feature( IQ Score) using **Logistic Regression**, a fundamental Machine Learning algorithm.
+This project predicts whether a student will be **placed** or **not placed** based on academic performance (**CGPA**) and other features (**IQ Score**) using **Logistic Regression**, a foundational algorithm in Machine Learning.
 
 ![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
 ![ML Model](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-yellowgreen)
@@ -12,75 +12,76 @@ This project predicts whether a student will be placed or not based on academic 
 
 ## 📌 Features
 
-- Predicts **placement status** (Placed/Not Placed) using input data.
-- Built using the **Logistic Regression** algorithm.
-- Trained on a real-world **placement dataset** (`placement.csv`).
-- Easy-to-use interface deployed on **Hugging Face Spaces (Gradio)**.
-- Preprocessing includes:
-  - Removal of irrelevant columns like `serial number`.
-  - Encoding categorical values.
-  - Feature scaling for numerical values.
+- Predicts **placement status**: Placed ✅ or Not Placed ❌
+- Uses the **Logistic Regression** ML algorithm.
+- Trained on a real-world dataset: `placement.csv`
+- Hosted using **Gradio** on **Hugging Face Spaces**
+- Data preprocessing includes:
+  - Removal of irrelevant columns (e.g., `serial number`)
+  - Encoding of categorical variables
+  - Feature scaling for better performance
 
 ---
-## 
+
+## 📁 Project Structure
+
 Placement_Predictor/
-├── placement.csv         # Dataset used for training
-├── model.pkl             # Trained Logistic Regression model
-├── app.py                # Gradio app script
-├── train_model.py        # Model training script
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
-🧠 Model Details
-Algorithm: Logistic Regression
-
-Target Variable: status (Placed / Not Placed)
-
-Features Used:
+├── placement.csv # Dataset used for training
+├── model.pkl # Trained Logistic Regression model
+├── app.py # Gradio interface script
+├── train_model.py # Model training script
+├── requirements.txt # Dependencies
+└── README.md # Project documentation
 
 
-CGPA
-IQ Score
+---
 
+## 🧠 Model Details
 
+- **Algorithm:** Logistic Regression
+- **Target Variable:** `status` (Placed / Not Placed)
+- **Features Used:**
+  - CGPA
+  - IQ Score
 
-##📊 Dataset Overview
-Source: placement.csv
+---
 
-##Preprocessing:
+## 📊 Dataset Overview
 
-Dropped unnecessary column: serial number
+- **Source:** `placement.csv`
+- **Preprocessing Steps:**
+  - Removed the `serial number` column
+  - Handled missing values
+  - Encoded categorical variables using `LabelEncoder`
+  - Scaled numerical features for better model performance
 
-Handled missing values
+---
 
-Encoded categorical features using LabelEncoder
+## 🧑‍💻 Author
 
+**Dhiraj Kumar**
 
-##🧑‍💻 Author
-Dhiraj Kumar
+- [LinkedIn](https://www.linkedin.com/in/dhiraj-kumar-93a17a308)
+- [GitHub](https://github.com/Dhirajgupta440)
 
-LinkedIn
+---
 
-GitHub
+## 💡 Future Improvements
 
-##💡 Future Improvements
-Add more features Age
+- Add more input features:
+  - Age
+  - Gender
+  - Secondary and Higher Secondary percentages
+  - Degree percentage
+  - Work experience
+  - Employability test score
+- Implement multiple ML algorithms (e.g., SVM, Random Forest)
+- Add data visualizations and graphs to the UI
+- Suggest resume improvements based on model prediction
+- Explore deep learning-based predictors
 
-Gender
+---
 
-Secondary and Higher Secondary percentages
+## 📄 License
 
-Degree percentage
-
-Work experience
-
-Employability test score, etc.
-Add more algorithms (e.g., SVM, Random Forest) for comparison.
-
-Improve UI with more visualizations.
-
-Add resume-building suggestions based on prediction.
-
-Explore deep learning models.
-
-📄 License
-This project is open source and available under the MIT License.
+This project is open source and available under the **MIT License**.
