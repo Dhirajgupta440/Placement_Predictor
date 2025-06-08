@@ -1,0 +1,5 @@
+gradio>=4.29.0     # UI
+scikit-learn>=1.4  # ML toolkit
+pandas>=2.2        # tiny CSV utility
+numpy>=1.26        # math
+joblib>=1.4        # model save/load
