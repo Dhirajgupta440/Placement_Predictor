@@ -1,13 +1,6 @@
+# 🎓Placement Predictor
 
-🎓  Placement Predictor
-
-This project uses Logistic Regression to predict whether a student will be placed in a company or not based on various academic and skill-based features. It's built using Python and trained on a dataset (placement.csv) that includes details like CGPA,IQ Level.
-
-
-
-# 🎓 Campus Placement Predictor
-
-This project predicts whether a student will be placed or not based on academic performance and other features using **Logistic Regression**, a fundamental Machine Learning algorithm.
+This project predicts whether a student will be placed or not based on academic performance( CGPA) and other feature( IQ Score) using **Logistic Regression**, a fundamental Machine Learning algorithm.
 
 ![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
 ![ML Model](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-yellowgreen)
@@ -29,11 +22,65 @@ This project predicts whether a student will be placed or not based on academic 
   - Feature scaling for numerical values.
 
 ---
+## 
+Placement_Predictor/
+├── placement.csv         # Dataset used for training
+├── model.pkl             # Trained Logistic Regression model
+├── app.py                # Gradio app script
+├── train_model.py        # Model training script
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+🧠 Model Details
+Algorithm: Logistic Regression
 
-## 🚀 Getting Started
+Target Variable: status (Placed / Not Placed)
 
-### 1. Clone the repository
+Features Used:
 
-```bash
-git clone https://github.com/Dhirajgupta440/Placement_Predictor.git
-cd Placement_Predictor
+
+CGPA
+IQ Score
+
+
+
+##📊 Dataset Overview
+Source: placement.csv
+
+##Preprocessing:
+
+Dropped unnecessary column: serial number
+
+Handled missing values
+
+Encoded categorical features using LabelEncoder
+
+
+##🧑‍💻 Author
+Dhiraj Kumar
+
+LinkedIn
+
+GitHub
+
+##💡 Future Improvements
+Add more features Age
+
+Gender
+
+Secondary and Higher Secondary percentages
+
+Degree percentage
+
+Work experience
+
+Employability test score, etc.
+Add more algorithms (e.g., SVM, Random Forest) for comparison.
+
+Improve UI with more visualizations.
+
+Add resume-building suggestions based on prediction.
+
+Explore deep learning models.
+
+📄 License
+This project is open source and available under the MIT License.
